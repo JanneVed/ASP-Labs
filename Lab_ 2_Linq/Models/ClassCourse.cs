@@ -13,9 +13,9 @@ namespace Lab__2_Linq.Models
         [Required, Column(TypeName = "date")] public DateTime EndDate { get; set; }
 
         public int ClassId { get; set; }
-        public int CourseId { get; set; }
-
         public SchoolClass SchoolClass { get; set; }
+
+        public int CourseId { get; set; }
         public Course Course { get; set; }
     }
 }
