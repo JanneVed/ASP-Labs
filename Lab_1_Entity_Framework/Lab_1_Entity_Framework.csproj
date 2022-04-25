@@ -8,6 +8,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20220407145435_AddedLeaveTypeToLeaveTableChangedEndDateToNotRequired.cs" />
     <Compile Remove="Migrations\20220407145435_AddedLeaveTypeToLeaveTableChangedEndDateToNotRequired.Designer.cs" />
+    <Compile Remove="Migrations\20220419191132_InitialDbCreation.cs" />
+    <Compile Remove="Migrations\20220419191132_InitialDbCreation.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
