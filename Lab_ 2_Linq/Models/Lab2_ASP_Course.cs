@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Lab__2_Linq.Models
 {
-    class Lab2_ASP_Course : DbContext
+    public class Lab2_ASP_Course : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<SchoolClass> SchoolClasses { get; set; }
-        public DbSet<ClassCourse> ClassCourses { get; set; }
+        public DbSet<CourseInfo> CourseInfos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

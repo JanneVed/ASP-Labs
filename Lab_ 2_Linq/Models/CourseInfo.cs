@@ -6,14 +6,14 @@ using System.Text;
 
 namespace Lab__2_Linq.Models
 {
-    class ClassCourse
+    public class CourseInfo
     {
-        [Key] public int ClassCourseId { get; set; }
+        [Key] public int CourseTimespanId { get; set; }
         [Required, Column(TypeName = "date")] public DateTime StartDate { get; set; }
         [Required, Column(TypeName = "date")] public DateTime EndDate { get; set; }
 
         public int ClassId { get; set; }
-        public SchoolClass SchoolClass { get; set; }
+        [ForeignKey(nameof(ClassId))] public SchoolClass SchoolClass { get; set; }
 
         public int CourseId { get; set; }
         public Course Course { get; set; }

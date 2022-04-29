@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Lab__2_Linq.Models
 {
-    class Student
+    public class Student
     {
-
         [Key] public int StudentId { get; set; }
         [Required] public string FirstName { get; set; }
         [Required] public string LastName { get; set; }
@@ -16,6 +16,6 @@ namespace Lab__2_Linq.Models
         public string? Number { get; set; }
 
         public int ClassId { get; set; }
-        public SchoolClass SchoolClass { get; set; }
+        [ForeignKey(nameof(ClassId))] public SchoolClass SchoolClass { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lab__2_Linq.Models
 {
-    class Teacher
+    public class Teacher
     {
         [Key] public int TeacherId { get; set; }
         [Required] public string FirstName { get; set; }

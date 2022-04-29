@@ -8,7 +8,11 @@ namespace Lab_1_Entity_Framework
     {
         static void Main(string[] args)
         {
-            //PopulateTables()
+            //using DbConection context = new DbConection();
+            //{
+            //    PopulateTables(context);
+            //}
+            
             MainMenu();
         }
 
